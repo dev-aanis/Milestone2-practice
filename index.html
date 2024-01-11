@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexLayout</title>
+
+    <style>
+        /* .container{
+            display: grid; */
+            /* grid-template-columns: repeat(3, 1fr) 2fr; */
+            /* grid-template-columns: repeat(3, 200px) 100px; */
+            /* grid-template-columns: 200px auto 100px; */
+            /* grid-template-columns: auto 100px 200px auto; */
+            /* justify-content: space-evenly; */
+            /* grid-template-columns: repeat(3, 200px); */
+            /* grid-template-columns: 60% 30%; */
+            /* grid-template-columns: repeat(3, 1fr);
+        } */
+        /* .item{
+            border: 2px solid sandybrown;
+        } */
+        /* .vertical-collage img{
+            height: calc( (100%-5px)/2 )
+        } */
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a{
+            text-decoration: none;
+        }
+        .login-form-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid green; */
+            height: 100vh;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 3px solid goldenrod;
+            padding: 20px 20px 40px 20px;
+            width: 40%;
+        }
+        .login-form input{
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid green;
+        }
+        .login-form h1{
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <h1>2D Grid Layout</h1>
+    <div class="container">
+            <div class="item">box 1</div>
+            <div class="item">box 2</div>
+            <div class="item">box 3</div>
+            <div class="item">box 4</div>
+            <div class="item">box 5</div>
+            <div class="item">box 6</div>
+            <div class="item">box 7</div>
+            <div class="item">box 8</div>
+            <div class="item">box 9</div>
+            <div class="item">box 10</div>
+            <div class="item">box 11</div>
+            <div class="item">box 12</div>
+            <div class="item">box 13</div>
+            <div class="item">box 14</div>
+            <div class="item">box 15</div>
+    </div> -->
+    <nav>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+        </div>
+        <a href="#">Login</a>
+    </nav>
+    <div class="login-form-container">
+        <form class="login-form">
+            <h1>Please Login</h1>
+            <input type="email" placeholder="user@gmail.com" required>
+            <input type="password" placeholder="********" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
