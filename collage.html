@@ -27,6 +27,26 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 5px;
         }
+        /*Responsive media query for mobile device*/
+        @media screen and (max-width: 576px) {
+            .row{
+                flex-direction: column;
+                height: auto;
+            }
+            .square-collage{
+                grid-template-columns: 1fr;
+            }
+        }
+        /*Responsive media query for mobile device*/
+
+        /*Responsive media query for tablet device*/
+        @media screen and (min-width: 576.001px) and (max-width: 992px) {
+            .row{
+                flex-direction: column;
+                height: auto;
+            }
+        }
+        /*Responsive media query for tablet device*/
     </style>
 </head>
 <body>
