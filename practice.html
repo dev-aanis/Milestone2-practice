@@ -4,6 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice Task</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 250px);
+            gap: 10px;
+            grid-template-rows: repeat(2, 250px);
+            justify-content: center;
+            margin-top: 50px;
+            max-height: 700px;
+        }
+        #box-1{
+            grid-row: span 2;
+            background-color: rgb(250, 5, 87);
+        }
+        #box-2{
+            grid-column: span 2;
+            background-color: goldenrod;
+        }
+        #box-3{
+            background-color: blueviolet;
+        }
+        #box-4{
+            background-color: rgb(30, 131, 117);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
