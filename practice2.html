@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food Item</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* section{
+            margin: 10px;
+        } */
+        .container1{
+            display: flex;
+            column-gap: 20px;
+        }
+        .container2{
+            display: flex;
+            column-gap: 20px;
+        }
+        .food1{
+            width: 500px; 
+            height: 300px; 
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .food2{
+            width: 500px; 
+            height: 300px; 
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .food1-text, .food2-text{
+            margin: auto 0;
+        }
+        .food1-text p{
+            margin: 10px 0 20px 0;
+        }
+        .food2-text p{
+            margin: 10px 0 20px 0;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container1, .container2{
+                flex-direction: column;
+                padding: 10px;
+            }
+            .food1, .food2{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+
+        <div class="container1">
+            <div>
+                <img  class="food1" src="images/desart2.jpg" alt="">
+            </div>
+            <div class="food1-text">
+                <h1>Post Title will be here.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis suscipit tenetur quod architecto? Incidunt repellat aperiam facilis voluptate delectus odit numquam officiis maxime eveniet sapiente id explicabo eligendi ea asperiores modi recusandae, maiores sed porro? Quisquam ullam dolore ipsam eveniet. Error molestiae illum vero quae maxime laborum aspernatur ipsa commodi!</p>
+                <button style="background-color: blue; color: white; border: 0; height: 40px;width: 90px;"><b>Read More</b></button>
+            </div>
+        </div>
+    
+        <div class="container2">
+            <div>
+                <img class="food2" src="images/desart3.jpg" alt="">
+            </div>
+            <div class="food2-text">
+                <h1>Post Title will be here.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis suscipit tenetur quod architecto? Incidunt repellat aperiam facilis voluptate delectus odit numquam officiis maxime eveniet sapiente id explicabo eligendi ea asperiores modi recusandae, maiores sed porro? Quisquam ullam dolore ipsam eveniet. Error molestiae illum vero quae maxime laborum aspernatur ipsa commodi!</p>
+                <button style="background-color: blue; color: white; border: 0; height: 40px;width: 90px;"><b>Read More</b></button>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
