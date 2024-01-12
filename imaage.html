@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adapt image for different device</title>
+
+    <style>
+        .container{
+            text-align: center;
+            width: 100%;
+        }
+        img{
+            width: 800px;
+            height: 590px;
+            object-fit: cover;
+        }
+
+        @media screen and (max-width: 576px) {
+            img{
+                max-width: 40%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/A.jpg" alt="">
+    </div>
+</body>
+</html>
